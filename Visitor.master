@@ -1,0 +1,71 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Visitor.master.cs" Inherits="Admin" %>
+
+<%--<!DOCTYPE html>--%>
+
+<%--<html xmlns="http://www.w3.org/1999/xhtml">--%>
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<br />
+<br />
+
+<style>
+    .btn {
+        background-color: rgb(255, 255, 255);
+        text-align: center;
+        color: black;
+        width: 200px;
+        padding: 20px;
+        text-align: center;
+        font-size: 16px;
+        transition: 0.3s;
+    }
+
+        .btn:hover {
+            background-color: lightblue;
+            color: #000;
+            width: 200px;
+            padding: 20px;
+        }
+</style>
+
+    <form id="form1" runat="server">
+        <a href="Default.aspx"><img src="images/logo1.png" alt="Logo" style="position: absolute; height: 135px; width: 200px; float: left" /></a>
+        <div style="float: right;">
+            <asp:LinkButton ID="LinkButton7" runat="server" CssClass="btn" PostBackUrl="default.aspx">🏠</asp:LinkButton>
+            <asp:LinkButton ID="LinkButton5" runat="server" CssClass="btn" PostBackUrl="coursesdisp.aspx">Courses</asp:LinkButton>
+            <asp:LinkButton ID="LinkButton8" runat="server" CssClass="btn" PostBackUrl="gdisp.aspx">Gallery</asp:LinkButton>
+            <asp:LinkButton ID="LinkButton4" runat="server" CssClass="btn" PostBackUrl="achieve.aspx">Achieve</asp:LinkButton>
+            <asp:LinkButton ID="LinkButton6" runat="server" CssClass="btn" PostBackUrl="facultydisp.aspx">Faculty</asp:LinkButton>
+            <asp:LinkButton ID="LinkButton1" runat="server" CssClass="btn" PostBackUrl="inquiry.aspx">Inquiry</asp:LinkButton>
+            <asp:LinkButton ID="LinkButton10" runat="server" CssClass="btn" PostBackUrl="expdisp.aspx">Expert</asp:LinkButton>
+            <asp:LinkButton ID="LinkButton2" runat="server" CssClass="btn" PostBackUrl="feedback.aspx">Feedback</asp:LinkButton>
+            <asp:LinkButton ID="LinkButton3" runat="server" CssClass="btn" PostBackUrl="login.aspx">🔐 Login</asp:LinkButton>
+        </div>
+        <div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+    <br />
+    <table style="width: 100%">
+        <tr style="height: 30px; background-color: #b51000">
+         </tr>
+    </table>
+
+    <footer>
+        <center>    
+            <div style="font-size:x-large; font-style:oblique; color:lightskyblue; width:1000px; background-color: #FCFCFC;">
+                <marquee direction="left"onmouseover="this.stop();" onmouseout="this.start();"><strong> &copy; 2024. | Course Information and Research | Developed By :: Akshat B Sanghvi </strong></marquee>
+            </div>
+        </center>
+    </footer>
+    
+<%--</html>--%>

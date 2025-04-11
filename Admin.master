@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="Admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<style>
+    .btn {
+        background-color: #ddd;
+        border: none;
+        color: black;
+        width:150px;
+        padding:15px;
+        text-align: center;
+        font-size: 16px;
+        margin: 4px 6px;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background-color: #3e8e41;
+        color: white;
+    }
+</style>
+</head>
+    <body>
+        
+        <form id="form1" runat="server">
+        <img src="images/logo1.png" alt="Logo" style="position: absolute; height: 135px; width: 200px; float: left" />
+        <div style="float: right;">
+            <br />
+        <asp:LinkButton ID="LinkButton1" runat="server" CssClass="btn" PostBackUrl="default1.aspx">🏠</asp:LinkButton>
+        <asp:LinkButton ID="LinkButton2" runat="server" CssClass="btn" PostBackUrl="courses.aspx">Courses</asp:LinkButton>
+        <asp:LinkButton ID="LinkButton3" runat="server" CssClass="btn" PostBackUrl="gallery.aspx">Gallery</asp:LinkButton>
+        <asp:LinkButton ID="LinkButton4" runat="server" CssClass="btn" PostBackUrl="faculty.aspx">Faculty</asp:LinkButton>
+        <asp:LinkButton ID="LinkButton5" runat="server" CssClass="btn" PostBackUrl="expert.aspx">Expert</asp:LinkButton>
+        <asp:LinkButton ID="LinkButton6" runat="server" CssClass="btn" PostBackUrl="inqdisp.aspx">Inquiry</asp:LinkButton>
+        <asp:LinkButton ID="LinkButton7" runat="server" CssClass="btn" PostBackUrl="fbdisp.aspx">Feedback</asp:LinkButton>
+        <asp:LinkButton ID="LinkButton8" runat="server" CssClass="btn" PostBackUrl="~/logout.aspx"> </asp:LinkButton>
+        <%--<asp:LoginStatus ID="LoginStatus1" runat="server"  CssClass="btn"/>--%>
+        </div>
+            <br />
+            <br />
+            <br />
+        <div>
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                
+            </asp:ContentPlaceHolder>
+        </div>
+        </form>
+    </body>
+
+    <footer>
+        <center>
+            <div style="font-size:x-large; font-style:oblique; color:lightskyblue; width:1000px; background-color: #FCFCFC;">
+                <marquee direction="left"onmouseover="this.stop();" onmouseout="this.start();"><strong> &copy; 2024. | Developed By :: Akshat B Sanghvi </strong></marquee>
+            </div>
+        </center>
+    </footer>
+
+
+</html>

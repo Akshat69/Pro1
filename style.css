@@ -1,0 +1,19 @@
+.menu{
+	text-align:center;
+	background:red;
+	color:white;
+	width:5%;
+	cursor:pointer;
+	padding:8px 1px 8px 1px;
+}
+.smenu{
+	text-decoration:none;   
+	display:none;
+	position:absolute;
+	cursor:pointer;
+	padding:0px 0px 0px 0px;
+}
+.menu:hover .smenu{
+	display:block;
+	z-index:0;
+}
